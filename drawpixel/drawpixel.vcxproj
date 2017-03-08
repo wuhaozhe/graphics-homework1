@@ -145,13 +145,17 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\lodepng.cpp" />
+    <ClCompile Include="DDAdrawline.cpp" />
     <ClCompile Include="drawer.cpp" />
+    <ClCompile Include="drawline.cpp" />
     <ClCompile Include="drawpixel.cpp" />
+    <ClCompile Include="lodepng.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\lodepng.h" />
+    <ClInclude Include="DDAdrawline.h" />
     <ClInclude Include="drawer.h" />
+    <ClInclude Include="drawline.h" />
+    <ClInclude Include="lodepng.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

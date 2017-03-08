@@ -21,18 +21,30 @@
     <ClCompile Include="drawpixel.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lodepng.cpp">
+    <ClCompile Include="drawer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="drawer.cpp">
+    <ClCompile Include="lodepng.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="drawline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DDAdrawline.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\lodepng.h">
+    <ClInclude Include="drawer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="drawer.h">
+    <ClInclude Include="lodepng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="drawline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DDAdrawline.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

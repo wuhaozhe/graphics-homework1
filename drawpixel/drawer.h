@@ -1,8 +1,15 @@
 #ifndef DRAWER_H
 #define DRAWER_H
 #include <iostream>
-#include <vector>
+#include "lodepng.h"
 using namespace std;
+struct Color         //Pixel的组成r, g, b, a
+{
+	unsigned char r;
+	unsigned char g;
+	unsigned char b;
+	unsigned char a;
+};
 class drawer
 {
 public:
@@ -16,18 +23,15 @@ public:
 		}
 		return instance;
 	}
-	void set_size(int width, int height);         //设置图片的大小 
-	void set_pixel(int x, int y, Color color);     //设置像素颜色
+	void set_size(unsigned width, unsigned height);         //设置图片的大小 
+	void set_pixel(unsigned x, unsigned y, Color color);     //设置像素颜色图片的左上角为0, 0
+	bool output_image();                           //将图像输出
+	const char* filename = "test.png";             //图片输出时的文件名
 private:
-	int width;
-	int height;
+	vector<unsigned char> image;
+	unsigned width;
+	unsigned height;
 	static drawer* instance;
 };
-struct Color         //Pixel的组成r, g, b, a
-{
-	int r;
-	int g;
-	int b;
-	int a;
-};
+
 #endif
