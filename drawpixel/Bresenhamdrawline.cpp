@@ -14,7 +14,15 @@ Bresenhamdrawline::~Bresenhamdrawline()
 bool Bresenhamdrawline::partline_drawer(int start_x, int start_y, int end_x, int end_y, Color color, bool k_negative_flag, bool k_big_flag)
 {
 	int x, y, dx, dy, e;
-	dx = end_x - start_x, dy = end_y - start_y, e = -1 * dx;
+	dx = end_x - start_x, dy = end_y - start_y;
+	if (k_negative_flag)
+	{
+		e = dx;
+	}
+	else
+	{
+		e = -1 * dx;
+	}
 	x = start_x, y = start_y;
 	for (int i = 0; i <= dx; i++)
 	{
