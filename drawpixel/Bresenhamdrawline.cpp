@@ -10,6 +10,10 @@ Bresenhamdrawline::Bresenhamdrawline()
 Bresenhamdrawline::~Bresenhamdrawline()
 {
 }
+Bresenhamdrawline::Bresenhamdrawline(PolygonDrawer* in):drawline(in)
+{
+	
+}
 
 bool Bresenhamdrawline::partline_drawer(int start_x, int start_y, int end_x, int end_y, Color color, bool k_negative_flag, bool k_big_flag)
 {

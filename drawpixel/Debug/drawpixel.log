@@ -1,6 +1,5 @@
 ﻿  drawpixel.cpp
-e:\大二下\图形学\drawpixel\drawpixel\drawpixel.cpp(7): warning C4305: “初始化”: 从“double”到“float”截断
-e:\大二下\图形学\drawpixel\drawpixel\drawpixel.cpp(24): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-e:\大二下\图形学\drawpixel\drawpixel\drawpixel.cpp(25): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+e:\大二下\图形学\drawpixel\drawpixel\drawpixel.cpp(31): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+e:\大二下\图形学\drawpixel\drawpixel\drawpixel.cpp(32): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
   drawpixel.vcxproj -> E:\大二下\图形学\drawpixel\Debug\drawpixel.exe
   drawpixel.vcxproj -> E:\大二下\图形学\drawpixel\Debug\drawpixel.pdb (Full PDB)
