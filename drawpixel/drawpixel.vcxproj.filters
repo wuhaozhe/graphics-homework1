@@ -33,6 +33,12 @@
     <ClCompile Include="DDAdrawline.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Bresenhamdrawline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="line.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="drawer.h">
@@ -45,6 +51,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DDAdrawline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bresenhamdrawline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="line.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
