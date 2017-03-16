@@ -153,6 +153,7 @@
     <ClCompile Include="line.cpp" />
     <ClCompile Include="lodepng.cpp" />
     <ClCompile Include="PolygonDrawer.cpp" />
+    <ClCompile Include="Polygondrawline.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bresenhamdrawline.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="line.h" />
     <ClInclude Include="lodepng.h" />
     <ClInclude Include="PolygonDrawer.h" />
+    <ClInclude Include="Polygondrawline.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

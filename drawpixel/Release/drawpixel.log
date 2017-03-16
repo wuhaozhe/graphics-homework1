@@ -1,0 +1,10 @@
+﻿  drawpixel.cpp
+drawpixel.cpp(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+drawpixel.cpp(34): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码
+  80 of 419 functions (19.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  drawpixel.vcxproj -> E:\大二下\图形学\drawpixel\Release\drawpixel.exe
+  drawpixel.vcxproj -> E:\大二下\图形学\drawpixel\Release\drawpixel.pdb (Full PDB)

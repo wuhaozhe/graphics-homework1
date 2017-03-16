@@ -1,4 +1,5 @@
 #include "PolygonDrawer.h"
+#include "Polygondrawline.h"
 #include "Bresenhamdrawline.h"
 
 
@@ -27,16 +28,20 @@ bool PolygonDrawer::draw_border(Color color)
 	}
 	else
 	{
-		Bresenhamdrawline* line_draw = new Bresenhamdrawline(this);
+		Polygondrawline* line_draw = new Polygondrawline(this);
+		Bresenhamdrawline* border_draw = new Bresenhamdrawline();
 		int start_x = vertex[0].first, start_y = vertex[0].second;
 		for (int i = 1; i < vertex.size(); i++)
 		{
 			int terminal_x = vertex[i].first, terminal_y = vertex[i].second;
 			line_draw->line_drawer(start_x, start_y, terminal_x, terminal_y, color);
+			border_draw->line_drawer(start_x, start_y, terminal_x, terminal_y, color);
 			start_x = terminal_x, start_y = terminal_y;
 		}
 		line_draw->line_drawer(start_x, start_y, vertex[0].first, vertex[0].second, color);
+		border_draw->line_drawer(start_x, start_y, vertex[0].first, vertex[0].second, color);
 		delete line_draw;
+		delete border_draw;
 		return true;
 	}
 }
@@ -80,7 +85,7 @@ void PolygonDrawer::produce_edge_flag()
 }
 void PolygonDrawer::set_lineflag(int x, int y)
 {
-	edge_flag[y - min_y][x - min_x] = true;
+	edge_flag[y - min_y][x - min_x] = !edge_flag[y - min_y][x - min_x];
 }
 bool PolygonDrawer::fill_polygon(Color color)
 {
@@ -104,8 +109,7 @@ void PolygonDrawer::fill_polygon_inside(Color color)
 		{
 			if (edge_flag[i - min_y][j - min_x])
 			{
-				if(((j - min_x) == 0) || ((j - min_x) > 0 && !edge_flag[i - min_y][j - min_x - 1]))         //避免连着的一条线
-					draw_flag = !draw_flag;
+				draw_flag = !draw_flag;
 			}
 			if (draw_flag)
 			{

@@ -42,6 +42,9 @@
     <ClCompile Include="PolygonDrawer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Polygondrawline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="drawer.h">
@@ -63,6 +66,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="PolygonDrawer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygondrawline.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
